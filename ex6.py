@@ -7,7 +7,12 @@ def readFile():
     second = open("test.txt", 'r')
     splitted = second.read().split("\n")
     for i in range(4):
-        print(splitted[i])
+        if i != 3:
+            print(splitted[i])
+    else:
+        pass
 
 writeFile()
 readFile()
+
+#DONE
